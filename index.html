@@ -1,0 +1,140 @@
+<html>
+<head>
+	<title>Buy our house!</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script src="/path/to/jquery.masonry.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Average+Sans' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		body {
+			font-family: 'Average Sans', sans-serif;
+			color: #888;
+		}
+		.item {
+			/*width: 220px;*/
+			margin: 10px;
+			float: left;
+			border: 2px solid #DDD; 
+			border-radius: 5px;
+			padding: 3px
+		}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$('#container').masonry({
+				itemSelector: '.item',
+				// columnWidth: 350
+				columnWidth: function( containerWidth ) {
+			    return containerWidth / 5;
+			  }
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+		
+		<div class="item">
+			ACT I
+		</div>
+		<div class="item">
+			SCENE I. London. The palace.
+		</div>
+		<div class="item">
+			Enter KING HENRY, LORD JOHN OF LANCASTER, the EARL of WESTMORELAND, SIR WALTER BLUNT, and others
+		</div>
+
+		<div class="item">
+			<div class="speaker">KING HENRY IV</div>
+			<div class="speech">
+				So shaken as we are, so wan with care,
+Find we a time for frighted peace to pant,
+And breathe short-winded accents of new broils
+To be commenced in strands afar remote.
+			</div>
+		</div>
+		<div class="item">
+			<div class="speech">
+No more the thirsty entrance of this soil
+Shall daub her lips with her own children's blood;
+Nor more shall trenching war channel her fields,
+Nor bruise her flowerets with the armed hoofs
+			</div>
+		</div>
+		<div class="item">
+			<div class="speech">
+Of hostile paces: those opposed eyes,
+Which, like the meteors of a troubled heaven,
+All of one nature, of one substance bred,
+Did lately meet in the intestine shock
+			</div>
+		</div>
+		<div class="item">
+			<div class="speech">
+And furious close of civil butchery
+Shall now, in mutual well-beseeming ranks,
+March all one way and be no more opposed
+Against acquaintance, kindred and allies:
+			</div>
+		</div>
+		<div class="item">
+			<div class="speech">
+The edge of war, like an ill-sheathed knife,
+No more shall cut his master. Therefore, friends,
+As far as to the sepulchre of Christ,
+Whose soldier now, under whose blessed cross
+			</div>
+		</div>
+		<div class="item">
+			<div class="speech">
+We are impressed and engaged to fight,
+Forthwith a power of English shall we levy;
+Whose arms were moulded in their mothers' womb
+To chase these pagans in those holy fields
+			</div>
+		</div>
+		<div class="item">
+			<div class="speech">
+Over whose acres walk'd those blessed feet
+Which fourteen hundred years ago were nail'd
+For our advantage on the bitter cross.
+			</div>
+		</div>
+		<div class="item">
+			<div class="speech">
+But this our purpose now is twelve month old,
+And bootless 'tis to tell you we will go:
+			</div>
+		</div>
+		<div class="item">
+			<div class="speech">
+Therefore we meet not now. Then let me hear
+Of you, my gentle cousin Westmoreland,
+What yesternight our council did decree
+In forwarding this dear expedience.
+			</div>
+		</div>
+		
+
+
+		<div class="item">
+			<div class="speaker">WESTMORELAND</div>
+			<div class="speech">
+My liege, this haste was hot in question,
+And many limits of the charge set down
+But yesternight: when all athwart there came
+A post from Wales loaden with heavy news;
+Whose worst was, that the noble Mortimer,
+Leading the men of Herefordshire to fight
+Against the irregular and wild Glendower,
+Was by the rude hands of that Welshman taken,
+A thousand of his people butchered;
+Upon whose dead corpse there was such misuse,
+Such beastly shameless transformation,
+By those Welshwomen done as may not be
+Without much shame retold or spoken of.
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
