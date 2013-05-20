@@ -2,4 +2,6 @@ require 'sinatra'
 require 'sinatra/reloader' if development?
 require 'rdiscount'
 
-get('/'){'hello!'}
+
+set :haml, :format => :html5
+get('/'){haml :index}

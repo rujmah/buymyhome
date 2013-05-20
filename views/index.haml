@@ -1,0 +1,33 @@
+%html
+	%head
+		%title='Buy our house!'
+		%script{:scr=>'https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js'}
+		%link{:href =>'http://fonts.googleapis.com/css?family=Average+Sans',
+					:rel => 'stylesheet',
+					:type=>'text/css'}
+		:css
+			body {
+				font-family: 'Average Sans', sans-serif;
+				color: #888;
+			}
+			.item {
+				width: 220px;
+				margin: 10px;
+				float: left;
+				border: 2px solid #DDD; 
+				border-radius: 5px;
+				padding: 3px;
+				
+			}
+	%body
+
+		.container
+			%h1
+				House Details
+			.house-details
+				.overview
+					= markdown(:overview)
+				.rooms
+					.item= markdown(:living_room)
+					.item= markdown(:bed_1)
+					.item= markdown(:kitchen)
